@@ -1,0 +1,11 @@
+.table > .mask {
+    background-position-x: 5.5vw;
+}
+
+.table .view > .mask {
+    background-image: none;
+    background-color: #222222;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}

@@ -1,17 +1,29 @@
 {
     "name": "eslint-config-cas",
+    "main": ".eslintrc.js",
     "version": "0.0.1",
+    "license": "MIT",
     "scripts": {
-        "eslint": "eslint --quiet src/js/**/*.ts"
+        "eslint-test-base": "./node_modules/.bin/eslint test/*.* --config packages/eslint-config-base/.eslintrc.js",
+        "eslint-test-js": "./node_modules/.bin/eslint test/*.js --config packages/eslint-config-javascript/.eslintrc.js",
+        "eslint-test-ts": "./node_modules/.bin/eslint ./test/typescript_test.ts --config packages/eslint-config-typescript/.eslintrc.js",
+        "eslint-test-vue2.0": "./node_modules/.bin/eslint test/*.vue --config packages/eslint-config-vue2.0/.eslintrc.js",
+        "eslint-test-vue3.0": "./node_modules/.bin/eslint test/*.vue --config packages/eslint-config-vue3.0/.eslintrc.js",
+        "lerna-bootstrap": "./node_modules/.bin/lerna bootstrap"
     },
-    "license": "ISC",
-    "dependencies": {},
     "devDependencies": {
+        "@babel/core": "^7.16.5",
+        "@babel/eslint-parser": "^7.16.5",
+        "@babel/eslint-plugin": "^7.16.5",
+        "@eslint-config-cas/eslint-config-base": "0.0.1",
         "@typescript-eslint/eslint-plugin": "^2.3.1",
         "@typescript-eslint/parser": "^2.3.1",
-        "eslint": "^6.4.0",
+        "eslint": "^6.8.0",
         "eslint-config-prettier": "^6.3.0",
         "eslint-plugin-prettier": "^3.1.1",
-        "prettier": "^1.18.2"
+        "eslint-plugin-vue": "^8.1.1",
+        "lerna": "^4.0.0",
+        "prettier": "^1.18.2",
+        "typescript": "2.5.2"
     }
 }

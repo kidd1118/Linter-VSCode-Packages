@@ -1,0 +1,12 @@
+{
+    "name": "@eslint-config-cas/eslint-config-javascript",
+    "main": ".eslintrc.js",
+    "version": "0.0.1",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.3.0",
+        "eslint-plugin-prettier": "^3.1.1",
+        "prettier": "^1.18.2"
+    }
+}
